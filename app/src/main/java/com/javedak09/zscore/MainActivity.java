@@ -15,9 +15,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
     }
 
     public void CalcZScore(View view) {
@@ -30,28 +27,5 @@ public class MainActivity extends Activity {
         String str2 = "";
         String str3 = "";
         String str4 = "";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
 }
