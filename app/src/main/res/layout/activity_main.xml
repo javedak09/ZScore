@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.javedak09.zscore.MainActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="#d6d6d6"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:id="@+id/vu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbl_zscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZScore" />
+
+            <com.github.pinball83.maskededittext.MaskedEditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:mask="**.*"
+                app:maskIconColor="@color/colorPrimary"
+                app:notMaskedSymbol="*" />
+
+            <Button
+                android:id="@+id/btnZScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="CalcZScore"
+                android:text="Calc ZScore" />
+
+            <Button
+                android:id="@+id/btnZScore1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="CalcZScore"
+                android:text="Calc ZScore" />
+
+            <Button
+                android:id="@+id/btnZScore2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="CalcZScore"
+                android:text="Calc ZScore" />
+
+            <Button
+                android:id="@+id/btnZScore3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="CalcZScore"
+                android:text="Calc ZScore" />
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
